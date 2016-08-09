@@ -1,10 +1,28 @@
 <?php
 // FANNを生成
+/*
+ * No.1
+ */
 $num_layers = 3;
 $num_input = 2;
 $num_neuros_hidden = 3;
 $num_output  = 1;
 $ann = fann_create_standard($num_layers, $num_input, $num_neuros_hidden, $num_output);
+
+/*
+ * No.2
+ */
+/*
+$layers = [2, 3, 1];
+$ann = fann_create_standard_array(count($layers), $layers);
+*/
+
+/*
+ * No.3
+ */
+/*
+$ann = fann_create_from_file("./fann-xor.net");
+*/
 if (!$ann) { die("FANNの初期化に失敗"); }
 
 // パラメータを設定
