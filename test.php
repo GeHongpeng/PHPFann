@@ -21,7 +21,7 @@ $ann = fann_create_standard_array(count($layers), $layers);
  * No.3
  */
 /*
-$ann = fann_create_from_file("./fann-xor.net");
+$ann = fann_create_from_file("./data/fann-xor.net");
 */
 if (!$ann) { die("FANNの初期化に失敗"); }
 
@@ -33,8 +33,8 @@ fann_set_activation_function_output($ann, FANN_SIGMOID_SYMMETRIC);
 $desired_error = 0.00001;
 $max_epochs = 500000;
 $epochs_between_reports = 1000;
-fann_train_on_file($ann, "./fann-xor.dat", $max_epochs, $epochs_between_reports, $desired_error);
-fann_save($ann, "./fann-xor.net");
+fann_train_on_file($ann, "./data/fann-xor.dat", $max_epochs, $epochs_between_reports, $desired_error);
+fann_save($ann, "./data/fann-xor.net");
 
 // 学習したデータをテスト
 echo "学習結果をテスト:\n";
