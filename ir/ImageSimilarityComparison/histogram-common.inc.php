@@ -126,14 +126,3 @@ class HistogramComparisonClient {
         return $hisList;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
