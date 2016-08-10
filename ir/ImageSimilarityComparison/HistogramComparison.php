@@ -1,6 +1,10 @@
 <?php
 namespace ImageSimilarityComparison;
 
+/**
+ * Class HistogramComparisonClient
+ * @package ImageSimilarityComparison
+ */
 class HistogramComparisonClient {
     /**
      * 画像からカラーヒストグラムを作成する
